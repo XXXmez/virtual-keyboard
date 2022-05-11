@@ -205,9 +205,6 @@ function mouseClick(event, key, textarea) {
   if ((event.currentTarget.classList[1] === key && event.currentTarget.classList[1] === 'ShiftLeft') || (event.currentTarget.classList[1] === key && event.currentTarget.classList[1] === 'ShiftRight')) {
     shiftTapMouseClick(event.currentTarget);
   }
-  if (event.currentTarget.classList[1] === key && event.currentTarget.classList[1] === 'MetaLeft') {
-    alert('Let\'s pretend it\'s the start menu 😉');
-  }
 }
 class GenerateBtn {
   constructor(
