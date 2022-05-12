@@ -106,7 +106,6 @@ function getLang(lang) {
     btnLangCaps(langKeybord, capsLock, 0);
   }
 }
-getLang(localStorage.getItem('langKeyboard'));
 
 function keyboardLang(event, button) {
   if (event.repeat) return;
@@ -350,3 +349,4 @@ function createKeybord(link) {
   link.append(container);
 }
 createKeybord(body);
+getLang(localStorage.getItem('langKeyboard'));
