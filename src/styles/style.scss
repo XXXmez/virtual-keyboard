@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    &-title {
+        font-size: 45px;
+        letter-spacing: .2rem;
+    }
+
+    &-textarea {
+        margin-top: 20px;
+        width: 717px;
+        border: 1px solid #888;
+        outline: none;
+        -moz-appearance: none;
+        resize: none;
+        box-shadow: 0px 0px 20px 9px #0000002b;
+        padding: 10px;
+    }
+
+    &-keybord {
+        margin-top: 20px; 
+        display: flex;
+        width: 710px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 6px;
+        background-color: #c3c4c6;
+        padding: 6px;
+        border-radius: 25px;
+        box-shadow: 0px 0px 20px 9px #0000002b;
+
+        .keyboard-key {
+            width: 40px;
+            height: 40px;
+            background-color: #f1f2f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            border: 2px solid #494a4c;
+            color: #949497;
+            font-size: 13px;
+            font-weight: 700;
+            box-shadow: 0px 0px 8px 1px #0000002b;
+            user-select: none;
+            transition: .3s;
+
+            &.Backspace, &.CapsLock, &.ShiftLeft, &.Tab,
+            &.Enter, &.ShiftRight, &.Space, &.ControlLeft, 
+            &.MetaLeft, &.AltLeft, &.AltRight, &.ArrowLeft, 
+            &.ArrowDown, &.ArrowRight, &.ControlRight, &.ArrowUp, 
+            &.Delete {
+                background-color: #e3e4eb;
+            }
+
+            &.Backquote {
+                border-top-left-radius: 20px;
+            }
+            &.Backspace {
+                border-top-right-radius: 20px;
+            }
+            &.ControlLeft {
+                border-bottom-left-radius: 20px;
+            }
+            &.ControlRight {
+                border-bottom-right-radius: 20px;
+            }
+
+            &.Backspace, &.CapsLock, &.ShiftLeft{
+                width: 100px;
+            }
+            &.Tab {
+                width: 50px;
+            }
+            &.Enter, &.ShiftRight {
+                width: 86px;
+            }
+            &.Space {
+                width: 319px;
+            }
+
+            & .hidden-key {
+                display: none;
+            }
+
+            &.active {
+                background-color: #494a4c;
+            }
+            
+            &:hover {
+                cursor: pointer;
+                background-color: #7c7d7e;
+            }
+            &:active {
+                background-color: #494a4c;
+            }
+        }
+    }
+
+    &-description, &-language {
+        font-size: 14px;
+        color: #949497;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
